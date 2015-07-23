@@ -1,0 +1,72 @@
+	/* 나눔고딕 */
+	@font-face{
+	font-family:NanumGothic;
+	src:url(../fonts/NanumGothic.eot);
+	src:local(※), url(../fonts/NanumGothic.woff) format('ttf')
+	}
+	@font-face{
+		font-family:NotoSans;
+		src:url(../fonts/NotoSans-Regular.ttf)
+	}
+	/*사용자 정의 스타일*/
+	.hidden {font-size:0;line-height:0;text-shadow:none;color:transparent;}
+	.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+	.clearfix:after{content:'';display:block;clear:both;}
+	#ie7 .clearfix{zoom:1}
+	ul{list-style:none;padding:0;margin:0;}
+
+	body{
+	  background: #63C3B1;
+	  color: #fff;
+	  font-weight: 400;
+	  font-size: 1em;
+	}
+
+	section{
+		width:1210px;
+		margin:200px auto 0;
+		text-align: center;
+	}
+
+	.select-box{
+		display:block;
+		float:left;
+		width:100%; max-width:600px;
+		font-size:30px;
+		margin-right:10px;
+	}
+	.select-box:last-child{
+		margin-right:0
+	}
+
+	.target{
+		display:block;
+		border: 5px solid #fff;
+		padding:1em;
+		font-size:1.2em;
+		font-weight:600;
+		cursor:pointer;
+	}
+	.exi-select{
+		display:none;
+	}
+	.cs-select{
+		display:none;
+		background:#fff; 
+	}
+	.cs-select li{
+		padding:1em 2em;
+		font-size:26px;
+		color:#2980b9;
+		cursor:pointer;
+	}
+	.cs-select li:hover{
+		background:#f7f7f7
+	}
+	.selection + .exi-select + .cs-select{
+		display:block;
+	}
+	.selection{
+		background:#fff;
+		color:#2980b9;
+	}
